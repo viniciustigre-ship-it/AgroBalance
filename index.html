@@ -1,1 +1,298 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroBalance</title>
+
+```
+<!-- Arquivo CSS -->
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+<body>
+
+```
+<!-- =========================
+     BOTÕES DE ACESSIBILIDADE
+========================== -->
+<div class="acessibilidade">
+    <button id="aumentarFonte">A+</button>
+    <button id="diminuirFonte">A-</button>
+    <button id="contraste">Alto Contraste</button>
+</div>
+
+<!-- =========================
+     CABEÇALHO
+========================== -->
+<header class="hero">
+
+    <div class="hero-texto">
+        <h1>AgroBalance</h1>
+
+        <p>
+            Produzindo mais, desperdiçando menos.
+        </p>
+
+        <a href="#problema" class="btn">
+            Saiba Mais
+        </a>
+    </div>
+
+    <div class="hero-imagem">
+        <img
+        src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854"
+        alt="Agricultura Sustentável">
+    </div>
+
+</header>
+
+<main>
+
+    <!-- =========================
+         O PROBLEMA
+    ========================== -->
+    <section id="problema">
+
+        <h2>O Problema</h2>
+
+        <p>
+            A agricultura é responsável por grande parte do consumo de água
+            no mundo. Quando não existe controle adequado da irrigação,
+            milhões de litros são desperdiçados todos os anos.
+        </p>
+
+        <p>
+            Esse desperdício reduz a disponibilidade de água para outras
+            atividades humanas e provoca impactos ambientais significativos.
+        </p>
+
+        <p>
+            O uso excessivo da água pode causar escassez hídrica,
+            degradação dos ecossistemas e comprometer o futuro das próximas
+            gerações.
+        </p>
+
+    </section>
+
+    <!-- =========================
+         IMPACTOS AMBIENTAIS
+    ========================== -->
+    <section id="impactos">
+
+        <h2>Impactos Ambientais</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Escassez de Água</h3>
+                <p>
+                    O desperdício reduz a disponibilidade de recursos
+                    hídricos para a população e para o meio ambiente.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Degradação Ambiental</h3>
+                <p>
+                    O uso inadequado da água pode afetar rios, lagos e
+                    nascentes.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Redução da Biodiversidade</h3>
+                <p>
+                    Ecossistemas dependem da água para manter espécies
+                    vegetais e animais.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Futuras Gerações</h3>
+                <p>
+                    O consumo excessivo hoje pode gerar problemas sérios
+                    para o futuro.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         SOLUÇÕES
+    ========================== -->
+    <section id="solucoes">
+
+        <h2>Soluções Sustentáveis</h2>
+
+        <ul>
+            <li>Irrigação por gotejamento</li>
+            <li>Captação da água da chuva</li>
+            <li>Sensores inteligentes</li>
+            <li>Monitoramento digital</li>
+            <li>Agricultura de precisão</li>
+        </ul>
+
+    </section>
+
+    <!-- =========================
+         TECNOLOGIAS
+    ========================== -->
+    <section id="tecnologias">
+
+        <h2>Tecnologias no Campo</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Drones Agrícolas</h3>
+                <p>
+                    Monitoram plantações e identificam problemas rapidamente.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Sensores de Umidade</h3>
+                <p>
+                    Controlam a irrigação de forma precisa.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Inteligência Artificial</h3>
+                <p>
+                    Analisa dados e melhora a tomada de decisões.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Energia Solar Rural</h3>
+                <p>
+                    Reduz custos e promove sustentabilidade.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         CALCULADORA
+    ========================== -->
+    <section id="calculadora">
+
+        <h2>Calculadora de Consumo de Água</h2>
+
+        <div class="formulario">
+
+            <label>Área da plantação (hectares)</label>
+
+            <input
+            type="number"
+            id="area"
+            placeholder="Digite a área">
+
+            <label>Tipo de cultivo</label>
+
+            <select id="cultivo">
+
+                <option value="soja">Soja</option>
+                <option value="milho">Milho</option>
+                <option value="trigo">Trigo</option>
+                <option value="feijao">Feijão</option>
+
+            </select>
+
+            <button id="calcular">
+                Calcular
+            </button>
+
+        </div>
+
+        <div id="resultado"></div>
+
+    </section>
+
+    <!-- =========================
+         QUIZ
+    ========================== -->
+    <section id="quiz">
+
+        <h2>Quiz Ambiental</h2>
+
+        <form id="quizForm">
+
+            <div class="pergunta">
+                <p>1. Qual técnica economiza mais água?</p>
+
+                <input type="radio" name="q1" value="certo"> Irrigação por gotejamento
+                <input type="radio" name="q1" value="errado"> Desperdício livre
+            </div>
+
+            <div class="pergunta">
+                <p>2. Água da chuva pode ser reutilizada?</p>
+
+                <input type="radio" name="q2" value="certo"> Sim
+                <input type="radio" name="q2" value="errado"> Não
+            </div>
+
+            <div class="pergunta">
+                <p>3. Sensores ajudam a economizar água?</p>
+
+                <input type="radio" name="q3" value="certo"> Sim
+                <input type="radio" name="q3" value="errado"> Não
+            </div>
+
+            <div class="pergunta">
+                <p>4. Sustentabilidade pensa no futuro?</p>
+
+                <input type="radio" name="q4" value="certo"> Sim
+                <input type="radio" name="q4" value="errado"> Não
+            </div>
+
+            <div class="pergunta">
+                <p>5. Agricultura de precisão reduz desperdícios?</p>
+
+                <input type="radio" name="q5" value="certo"> Sim
+                <input type="radio" name="q5" value="errado"> Não
+            </div>
+
+            <button type="button" id="corrigirQuiz">
+                Ver Resultado
+            </button>
+
+        </form>
+
+        <div id="resultadoQuiz"></div>
+
+    </section>
+
+</main>
+
+<!-- =========================
+     RODAPÉ
+========================== -->
+<footer>
+
+    <p>
+        Projeto desenvolvido para o Concurso Agrinho 2026.
+    </p>
+
+    <p>
+        Tema: Agro forte, futuro sustentável:
+        equilíbrio entre produção e meio ambiente.
+    </p>
+
+</footer>
+
+<!-- Arquivo JS -->
+<script src="script.js"></script>
+```
+
+</body>
+</html>
 
